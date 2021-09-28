@@ -93,5 +93,24 @@ describe("Catalogue", () => {
         let rejectedProduct = cat.findProductById("A126");
         expect(rejectedProduct).to.be.undefined; 
       });
-});
+    });
+
+    describe("search", () => {
+        beforeEach( () => {
+            cat = new Catalogue("Test Catalogue");
+            cat.addProduct(new Product("A123", "Shoe", 100, 10, 10.00));
+            cat.addProduct(new Product("A124", "Shoulder Bag", 100, 10, 25.00));
+            cat.addProduct(new Product("A125", "Shalla", 100, 10, 35.00));
+          });
+        it("should only return products containing sho in its name", () => {
+            const result = cat.search("keyword","Sho");
+            expect(result).to.have.lengthOf(2);
+          });
+          it("should only return products with a price less than or equal to 25.00", () => {
+            const result = cat.search("price",25.00);
+            expect(result).to.have.lengthOf(2);
+          });
+    });
+
+
 });

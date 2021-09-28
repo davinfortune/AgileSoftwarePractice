@@ -52,5 +52,19 @@ class Catalogue {
     return noProductsAdded;
   }
 
+  search(element,value){
+    if(element == "price"){
+      const matchingPrices = this.products.filter(product => product.price <= value);
+      return matchingPrices;
+    }
+    else if(element == "keyword"){
+      const matchingKeywords = this.products.filter(product => product.name.includes(value) == true);
+      return matchingKeywords;
+    }
+    else {
+      throw new Error("Bad Search");
+    }
+  }
+
 }
 module.exports = Catalogue;
