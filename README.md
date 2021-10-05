@@ -1,7 +1,3 @@
-# AgileSoftwarePractice
+# Week 2
 
-This is the labs for the module *Agile Software Practice* Compiled into one repo, each branch represents a Weeks lab!!
-<br/><br/><br/><br/>
-<p align="center">
-  <img width="460" height="300" src="https://media4.giphy.com/media/gw3IWyGkC0rsazTi/giphy.gif?cid=ecf05e471e0ek38bajxhtknp3jehbg7w8t80ejgrkr97su4x&rid=giphy.gif&ct=g">
-</p>
+In this lab, you will automate the unit testing of a Javascript class. The standard practice would be to use a testing framework for this task, but we won't in this case. The objective for any testing process is to ensure the target is tested for all possible scenarios. We will use the Given-When-Then pattern to document these scenarios.
