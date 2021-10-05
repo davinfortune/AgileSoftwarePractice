@@ -1,5 +1,5 @@
 {
-  "name": "unit-test-mocha",
+  "name": "git-basics",
   "version": "1.0.0",
   "description": "Unit testing with Mocha and Chai ",
   "scripts": {
