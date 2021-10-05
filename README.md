@@ -1,1 +1,3 @@
-# AgileSoftwarePractice
+# Week 4
+
+In this lab, we will explore the basic commands of the Git tool for managing the version history of a software project's code-base. The same Product Catalogue mini-project we saw in an earlier lab will serve as the context. Since the focus of this lab is Git, we will not discuss the JS code as we already are very familiar with it. What is important is knowing how to use Git to track file changes.
