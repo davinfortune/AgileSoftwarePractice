@@ -1,4 +1,7 @@
 # Week 5
 
-Practicing and understanding git repository objects.
+The purpose of this lab is to verify your understanding of Git's internal data storage model:
+the object network.You must have completed lab '002 - Git: 
+Edit-Stage-Commit workflow' before attempting this lab. 
+Use your submitted solution to that lab as the basis for this one.
 
