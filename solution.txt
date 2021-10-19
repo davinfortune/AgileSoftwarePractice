@@ -1,0 +1,9 @@
+                                 HEAD               
+                                      ↓
+      |---------c----------|  |------ c --------------   master
+      |         ↑          |  |       ↑               |    ↓
+|--c--c    search-method   |--c   check-reorder       |--- c
+                              |                       |
+                              |-- c --c---------------
+                                  ↑
+                           batch-addproducts 
