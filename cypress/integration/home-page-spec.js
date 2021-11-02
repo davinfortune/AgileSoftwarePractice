@@ -108,6 +108,14 @@ describe("Home Page ", () => {
         cy.wrap($card).find("p").contains(matchingMovies[index].title);
       });
     });
-
    });
+   describe("If Heart Icon is shown", () => {
+    it("should check if a heart shows after movie is added to your favourites", () => {
+      cy.get('button[aria-label="add to favorites"]').eq(0).click();
+      cy.get('.makeStyles-avatar-10').eq(0);
+      cy.get('.MuiButton-colorInherit').eq(1).click();
+    });
+   });
+
+
 });
