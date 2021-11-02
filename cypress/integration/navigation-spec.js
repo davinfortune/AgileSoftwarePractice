@@ -71,7 +71,7 @@ describe("Navigation", () => {
     });
   });
   describe("The forward/backward links", () => {
-    beforeEach(() => {
+    beforeEach(() =>{
       cy.get(".MuiCardActions-root").eq(0).contains("More Info").click();
     });
     it("should navigate backward and forward between the movies detail page and the Discover page.", () => {
@@ -81,6 +81,13 @@ describe("Navigation", () => {
       cy.get("button[aria-label='go forward'").eq(1).click();
       cy.url().should("include", `/movies/${movies[0].id}`);
       cy.get("h3").contains(movies[0].title);
+    });
+    it("forward/backward links between Favouite movies and Movie details", () => {
+      cy.get(".MuiButton-colorInherit").eq(1).click();
+      cy.get("button[aria-label='go back'").eq(0).click();
+      cy.url().should("include", `/movies/${movies[0].id}`);
+      cy.get("button[aria-label='go forward'").eq(0).click();
+      cy.url().should("include", `/favorites`);
     });
   });
 
